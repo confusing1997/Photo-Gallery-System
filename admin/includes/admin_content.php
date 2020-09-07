@@ -22,7 +22,7 @@
 
                 $user = User::instantiation($result);
                 
-                echo $user->last_name;
+                //echo $user->last_name;
 
             ?>
 

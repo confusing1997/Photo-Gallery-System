@@ -36,17 +36,25 @@
 
         }
 
-        public static function instantiation($result) {
+        public static function instantiation($the_record) {
 
             $the_object = new self();
 
-            $the_object->id         = $result['id'];
-            $the_object->username   = $result['username'];
-            $the_object->password   = $result['password'];
-            $the_object->first_name = $result['first_name'];
-            $the_object->last_name  = $result['last_name'];
+            // $the_object->id         = $result['id'];
+            // $the_object->username   = $result['username'];
+            // $the_object->password   = $result['password'];
+            // $the_object->first_name = $result['first_name'];
+            // $the_object->last_name  = $result['last_name'];
 
-            return $the_object;
+            foreach ($the_record as $the_attribute => $value) {
+
+                if ($the_object->has_the_attribute($the_attribute)) {
+
+                    $the_object->the_attribute = $value;
+
+                }
+
+            }
 
         }
 
