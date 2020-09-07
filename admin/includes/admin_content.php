@@ -12,9 +12,9 @@
 
                 $result = User::find_all_users();
 
-                while ($row = mysqli_fetch_assoc($result)) {
+                foreach ($result as $key => $value) {
 
-                    echo $row['username']. " ";
+                    echo $value['last_name'];
 
                 }
 
