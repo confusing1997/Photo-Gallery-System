@@ -3,7 +3,7 @@
 
     class User {
 
-        public function find_all_user () {
+        public function find_all_users () {
 
             global $database;
 

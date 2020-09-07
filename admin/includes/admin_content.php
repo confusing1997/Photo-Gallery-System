@@ -9,11 +9,15 @@
             </h1>
 
             <?php 
+                $user = new User();
 
-                $sql = "SELECT * FROM users WHERE id = 1";
-                $result = $database->query($sql);
-                $user_found = mysqli_fetch_array($result);
-                echo $user_found['username'];
+                $result = $user->find_all_users();
+
+                while ($row = mysqli_fetch_assoc($result)) {
+
+                    echo $row['username']. " ";
+
+                }
 
             ?>
 
