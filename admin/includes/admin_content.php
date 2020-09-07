@@ -20,7 +20,15 @@
 
                 $result = User::find_user_id(2);
 
-                echo $result['last_name'];
+                $user = new User();
+
+                $user->id = $result['id'];
+                $user->username = $result['username'];
+                $user->password = $result['password'];
+                $user->first_name = $result['first_name'];
+                $user->last_name = $result['last_name'];
+
+                echo $user->first_name;
 
             ?>
 
