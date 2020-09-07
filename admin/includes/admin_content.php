@@ -20,7 +20,9 @@
 
                 $result = User::find_user_id(2);
 
-                echo $user->first_name;
+                $user = User::instantiation($result);
+                
+                echo $user->last_name;
 
             ?>
 

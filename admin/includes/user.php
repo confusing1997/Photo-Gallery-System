@@ -36,7 +36,7 @@
 
         }
 
-        private static function instantiation() {
+        public static function instantiation($result) {
 
             $the_object = new self();
 
