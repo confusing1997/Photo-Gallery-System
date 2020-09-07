@@ -36,4 +36,18 @@
 
         }
 
+        private static function instantiation() {
+
+            $the_object = new self();
+
+            $the_object->id         = $result['id'];
+            $the_object->username   = $result['username'];
+            $the_object->password   = $result['password'];
+            $the_object->first_name = $result['first_name'];
+            $the_object->last_name  = $result['last_name'];
+
+            return $the_object;
+
+        }
+
     }
