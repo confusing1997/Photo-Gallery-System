@@ -10,13 +10,17 @@
 
             <?php 
 
-                $result = User::find_all_users();
+                // $result = User::find_all_users();
 
-                foreach ($result as $key => $value) {
+                // while($row = mysqli_fetch_assoc($result)) {
 
-                    echo $value['last_name'];
+                //     echo $row['last_name']. " ";
 
-                }
+                // }
+
+                $result = User::find_user_id(2);
+
+                echo $result['last_name'];
 
             ?>
 
