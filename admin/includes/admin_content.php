@@ -30,9 +30,11 @@
                 
                 //echo $user->last_name;
 
-                $found_user = User::find_user_id(2);
+                // $found_user = User::find_user_id(2);
 
-                echo $found_user->last_name;
+                // echo $found_user->last_name;
+
+                $picture = new Picture();
 
             ?>
 
