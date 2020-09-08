@@ -34,8 +34,6 @@
 
                 // echo $found_user->last_name;
 
-                $picture = new Picture();
-
             ?>
 
             <ol class="breadcrumb">
