@@ -18,11 +18,9 @@
         public static function find_user_id ($id) {
 
             
-            $result_set = self::find_this_query("SELECT * FROM users WHERE id = $id LIMIT 1");
+            $the_result_array = self::find_this_query("SELECT * FROM users WHERE id = $id LIMIT 1");
 
-            $found_user = mysqli_fetch_assoc($result_set);
-
-            return $found_user;
+            return !empty($the_result_array) ? array_shift($the_result_array) : false;
 
         }
 

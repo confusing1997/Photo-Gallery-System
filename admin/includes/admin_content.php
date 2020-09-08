@@ -10,13 +10,13 @@
 
             <?php 
 
-                $user = User::find_all_users();
+                // $user = User::find_all_users();
 
-                foreach ($user as $user) {
+                // foreach ($user as $user) {
 
-                    echo $user->last_name . " ";
+                //     echo $user->last_name . " ";
 
-                }
+                // }
 
                 // while($row = mysqli_fetch_assoc($result)) {
 
@@ -29,6 +29,10 @@
                 // $user = User::instantiation($result);
                 
                 //echo $user->last_name;
+
+                $found_user = User::find_user_id(2);
+
+                echo $found_user->last_name;
 
             ?>
 
