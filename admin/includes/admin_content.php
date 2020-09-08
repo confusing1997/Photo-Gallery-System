@@ -10,7 +10,7 @@
 
             <?php 
 
-                // $result = User::find_all_users();
+                $result = User::find_all_users();
 
                 // while($row = mysqli_fetch_assoc($result)) {
 
@@ -18,9 +18,9 @@
 
                 // }
 
-                $result = User::find_user_id(2);
+                // $result = User::find_user_id(2);
 
-                $user = User::instantiation($result);
+                // $user = User::instantiation($result);
                 
                 //echo $user->last_name;
 

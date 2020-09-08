@@ -32,7 +32,15 @@
 
             $result_set = $database->query($sql);
 
-            return $result_set;
+            $the_object_array = array();
+
+            while ($row = mysqli_fetch_assoc($result_set)) {
+
+                $the_object_array[] = self::instantiation($row);
+
+            }
+
+            return $the_object_array;
 
         }
 
