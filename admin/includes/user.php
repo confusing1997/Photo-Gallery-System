@@ -58,7 +58,7 @@
 
                 if ($the_object->has_the_attribute($the_attribute)) {
 
-                    $the_object->the_attribute = $value;
+                    $the_object->$the_attribute = $value;
 
                 }
 

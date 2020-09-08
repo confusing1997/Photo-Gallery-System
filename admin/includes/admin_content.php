@@ -10,7 +10,13 @@
 
             <?php 
 
-                $result = User::find_all_users();
+                $user = User::find_all_users();
+
+                foreach ($user as $user) {
+
+                    echo $user->last_name . " ";
+
+                }
 
                 // while($row = mysqli_fetch_assoc($result)) {
 
