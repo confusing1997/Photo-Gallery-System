@@ -6,7 +6,7 @@
         </li>
 
         <li>
-            <a href="users.php"><i class="fa fa-fw fa-bar-chart-o"></i> Users</a>
+            <a href="users.php"><i class="fa fa-fw fa-bar-chart-o"></i>Users</a>
         </li>
 
         <li>
@@ -20,6 +20,6 @@
         <li>
             <a href="photos.php"><i class="fa fa-fw fa-edit"></i>Photos</a>
         </li>
-        
-    </ul>
+     </ul>
+     
 </div>
